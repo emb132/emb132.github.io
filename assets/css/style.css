@@ -799,4 +799,40 @@ body{
 .collab-item { background:#f3f6ff; padding:10px 20px; border-radius:14px; font-size:22px; }
 .collab-item a { text-decoration: none; font-weight:600; color:inherit; }
 .collab-item .muted { font-weight:400; color:var(--muted); font-size:13px; margin-left:6px; }
+span.pub-link:hover { text-decoration: none; }
+.news-card + .news-card { margin-top: 12px; }
 
+/* Current Roles & Milestones: horizontal timeline (presentation-template style) */
+.k-phd    { background:#0B9AD6; }
+.k-future { background:#A9B5C0; }
+.k-ta     { background:#5B9B1A; }
+.k-class  { background:#E8B100; }
+.k-law    { background:#E46C1B; }
+
+.tl-panel { background:#f2f2f2; padding:20px 0 28px; }
+.roles-header { font-size:22px; font-weight:700; color:#111827; margin:28px 0 12px; }
+.tl-legend { display:flex; flex-wrap:wrap; gap:8px 18px; margin:0 16px 24px; padding:10px 14px; background:#fff; border:1px solid #bdbdbd; font-size:14px; color:#222; }
+.tl-legend span { display:flex; align-items:center; gap:6px; }
+.tl-legend i { width:16px; height:16px; border-radius:50%; display:inline-block; }
+
+.tl-scroll { overflow-x:auto; }
+.tl { position:relative; min-width:760px; }
+.tl-row { position:relative; height:18px; margin-bottom:3px; }
+.tl-bar { position:absolute; top:0; height:18px; z-index:1; clip-path:polygon(8px 0, 100% 0, calc(100% - 8px) 100%, 0 100%); }
+
+.tl-years { display:flex; height:40px; margin:0 0 3px; background:#d9d9d9; }
+.tl-years span { flex:1; display:flex; align-items:center; justify-content:center; font-size:20px; font-weight:700; color:#111; border-right:2px solid #f2f2f2; }
+.tl-years span:last-child { border-right:0; }
+
+.tl-callouts { position:relative; height:122px; }
+.tl-pin { position:absolute; border-left:1px dashed #8c8c8c; }
+.tl-top .tl-pin { bottom:-21px; }   /* run past the clinic row down to the PhD bar */
+.tl-bottom .tl-pin { top:-3px; }   /* close the row gap so stems meet the bar */
+.tl-pin::before { content:""; position:absolute; left:-11px; width:21px; height:21px; border-radius:50%; background:#f2f2f2; border:4px solid #a6a6a6; box-sizing:border-box; }
+.tl-top .tl-pin::before { top:-21px; }
+.tl-bottom .tl-pin::before { bottom:-21px; }
+.tl-pin p { position:absolute; left:9px; margin:0; width:165px; font-size:13px; line-height:1.4; color:#595959; }
+.tl-top .tl-pin p { top:4px; }
+.tl-bottom .tl-pin p { bottom:4px; }
+.tl-pin b { display:block; font-weight:700; color:#262626; }
+.tl-pin-left p { left:auto; right:9px; text-align:right; }
